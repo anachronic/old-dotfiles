@@ -1,0 +1,82 @@
+* dotfiles
+
+  This is a collection of some dot files i have recently been in need to
+  mantain over multiple machines. Here's a complete full story just
+  because I can:
+
+  So I recently discovered [[http://i3wm.org/][i3wm]]. It's just the kind of thing I was
+  looking for, because since I started to make heavy use of Emacs, I've
+  been using the mouse less and less everyday. This project is a really
+  good solution to that, but it has it's drawbacks: You kind of have to
+  do everything by yourself. Which is, you know, good when your're
+  learning but not too good when you have to get the job done quickly.
+
+  Hence, this repository.
+
+** What should I put here?
+
+   Just non-emacs stuff:
+
+   1. =urxvt= config
+   2. =i3= config
+   3. Maybe my (very poor) vim config
+   4. =.Xmodmap= file.
+   5. =.xinitrc= file.
+
+   As you can see, most of the files in this repository are intended to
+   be used for some sort of development environment. I mostly use Arch
+   Linux.n
+
+** Keyboard Layout
+
+   Not that you care or anything, but I'll say it anyway: I'm a native
+   spanish speaker but also a programmer. If you are on a sort of equal
+   condition you'll understand the problem that means: On one hand
+   spanish has weird characters for keyboards: we have things like á, é,
+   í and ñ, not to mention the ocasional ü. That's all possible to do
+   with our standard keyboards, so it's really not an issue when I'm
+   writing spanish on my keyboard(s).
+
+   But there's a subtle issue with the Spanish keyboard: it is *awful* to
+   code in its layout, and it really is polite to say that, it's a
+   horrible experience and I would not wish that to my worst enemy.
+
+   Seriously.
+
+   So I have to not only tackle those two issues, but I also have the
+   problem where i3 does not really help much when it comes to
+   choosing keyboard layouts. Hmm...
+
+   What I used to do was to have two separate keyboard layouts:
+
+   * A plain English layout, and an
+   * English layout with AltGr dead keys
+
+   You see, here in Chile we use the AltGr key mostly to write the
+   =at= symbol (=@=), but it has some other uses too: in some
+   (horrible) layouts it's used to insert brackets, I can't remember
+   for the life of me if it's the square brackets or curly braces.
+
+   Anyway, I was all fine with that, because I could default English
+   layout and just switch to Spanish when needed. But that was until I
+   tackled the issue with =i3=. Yeah, I found an [[https://zuttobenkyou.wordpress.com/2011/08/24/xorg-using-the-us-international-altgr-intl-variant-keyboard-layout/][*amazing*]] blog post
+   that tackled the same problem with other languages that have weird
+   characters (French and German I believe). With that new keyboard
+   layout I can have the best of both worlds: consistently keep an
+   English layout without having to change it to write spanish. It's
+   pretty neat.
+
+   And oh, boy, have I included that in this repo.
+
+** Remapping
+
+
+   Remapping is a key issue to any developer.
+
+   I have already rebound =Caps Lock= to =Control=, but I wanna do
+   more, I wanna at least /try/ rebinding hold-RET to =Control=, they
+   say it's good, but I haven't had the opportunity to do it. With i3
+   it seems really easy, since it loads anything from =.xinitrc=. I
+   remember having problems with that file in GNOME. We'll see.
+
+   Also, Maybe rebind =menu= to =Hyper=?
