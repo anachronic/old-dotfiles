@@ -155,3 +155,8 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+
+# Add language options
+exec_always "setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl"
+exec_always "xmodmap ~/.Xmodmap"
