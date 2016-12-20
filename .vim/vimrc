@@ -1,16 +1,33 @@
-execute pathogen#infect()
 syntax on
-filetype plugin indent on
 set relativenumber
-set laststatus=2
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+
+call vundle#begin()
+Plugin 'vim-airline/vim-airline'
+Plugin 'easymotion/vim-easymotion'
+call vundle#end()
 
 let g:airline_powerline_fonts = 1
-set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Regular:h14
 
 set wildmenu
 
-let g:airline_theme='wombat'
-
-
 set guifont=DejaVu\ Sans\ Mono\ 11
 language en_US.utf8
+filetype plugin indent on
+
+set laststatus=2
+let mapleader=","
+
+
+" EasyMotion
+let g:EasyMotion_smartcase = 1
+
+map  <Leader>f <Plug>(easymotion-bd-f)
+map  <Leader>w <Plug>(easymotion-bd-w)
+
+nnoremap <Leader>wq :wq<CR>
+nnoremap <Leader>qq :q!<CR>
