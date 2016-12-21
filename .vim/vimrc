@@ -7,8 +7,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 
 call vundle#begin()
-Plugin 'vim-airline/vim-airline'
 Plugin 'easymotion/vim-easymotion'
+Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 call vundle#end()
 
 let g:airline_powerline_fonts = 1
