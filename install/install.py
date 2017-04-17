@@ -27,6 +27,7 @@ if __name__ == '__main__':
     home = os.path.expanduser("~")
 
     files = (".Xresources",
+             ".Xmodmap",
              ".tmux.conf",
              ".xinitrc",
              ".zshrc",
