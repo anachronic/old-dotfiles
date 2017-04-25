@@ -1,0 +1,37 @@
+[general]
+# List of accounts to be synced, separated by a comma.
+accounts = Gmail
+pythonfile = ~/.offlineimap.py
+maxsyncaccounts = 1
+
+[Account Gmail]
+# Identifier for the local repository; e.g. the maildir to be synced via IMAP.
+localrepository = Gmail-local
+# Identifier for the remote repository; i.e. the actual IMAP, usually non-local.
+remoterepository = Gmail-remote
+# Status cache. Default is plain, which eventually becomes huge and slow.
+presynchook = /home/nsalas/.local/bin/maildir-notmuch-sync pre /home/nsalas/Mail
+postsynchook = /home/nsalas/.local/bin/maildir-notmuch-sync post /home/nsalas/Mail
+autorefresh = 0.5
+quick = 10
+
+[Repository Gmail-local]
+# Currently, offlineimap only supports maildir and IMAP for local repositories.
+type = Maildir
+# Where should the mail be placed?
+localfolders = ~/Mail
+nametrans = lambda folder: re.sub('^inbox$', 'INBOX', folder)
+
+[Repository Gmail-remote]
+# Remote repos can be IMAP or Gmail, the latter being a preconfigured IMAP.
+type = Gmail
+remoteusereval = get_username("Gmail-remote")
+remotepasseval = get_password("Gmail-remote")
+realdelete = no
+nametrans = lambda folder: re.sub('^INBOX$', 'inbox', folder)
+
+folderfilter = lambda foldername: foldername not in ['[Gmail]/Spam', '[Gmail]/All Mail', '[Gmail]/Starred', '[Gmail]/Important']
+
+holdconnectionopen = true
+keepalive = 60
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
