@@ -41,7 +41,7 @@ def copy_binaries():
         source_path = os.path.join(dotfiles_bin, file)
 
         if not os.path.exists(dest_path):
-            shutil.copyfile(source_path, dest_path)
+            shutil.copy2(source_path, dest_path)
             print("Copied: {} to {}".format(file, dest_path))
         else:
             print("[SKIPPING]: {} already exists in the file system".format(
