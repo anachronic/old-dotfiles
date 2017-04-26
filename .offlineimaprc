@@ -10,8 +10,9 @@ localrepository = Gmail-local
 # Identifier for the remote repository; i.e. the actual IMAP, usually non-local.
 remoterepository = Gmail-remote
 # Status cache. Default is plain, which eventually becomes huge and slow.
-presynchook = /home/nsalas/.local/bin/maildir-notmuch-sync pre /home/nsalas/Mail
-postsynchook = /home/nsalas/.local/bin/maildir-notmuch-sync post /home/nsalas/Mail
+# presynchook = /home/nsalas/.local/bin/maildir-notmuch-sync pre /home/nsalas/Mail
+# postsynchook = /home/nsalas/.local/bin/maildir-notmuch-sync post /home/nsalas/Mail
+postsynchook = /home/nsalas/.local/bin/mu-reindex-safe
 autorefresh = 0.5
 quick = 10
 
