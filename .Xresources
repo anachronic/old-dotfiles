@@ -39,9 +39,22 @@ URxvt.color14:      #8abeb7
 URxvt.color7:       #707880
 URxvt.color15:      #c5c8c6
 
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,tabbedex
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
+
+URxvt.keysym.M-t: perl:tabbedex:new_tab
+
+URxvt.tabbed.tabbar-fg:   244
+URxvt.tabbed.tabbar-bg:   16
+URxvt.tabbed.tab-fg:      255
+URxvt.tabbed.tab-bg:      4
+URxvt.tabbed.bell-tab-fg: 255
+URxvt.tabbed.bell-tab-bg: 160
+URxvt.tabbed.bell-fg:     244
+URxvt.tabbed.bell-bg:     17
+URxvt.tabbed.title-fg:    28
+URxvt.tabbed.title-bg:    16
 
 xterm*faceName: DejaVu Sans Mono for Powerline:size=12:antialias=true
 
