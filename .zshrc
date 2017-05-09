@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/nsalas/.oh-my-zsh
 export EDITOR='emacsclient -t -a vim'
+export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/

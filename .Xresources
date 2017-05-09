@@ -2,42 +2,46 @@ URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=16
 URxvt.letterSpace: -1
 URxvt.scrollBar: false
 
-! special
-URxvt.foreground:   #c5c8c6
-URxvt.background:   #1d1f21
-URxvt.cursorColor:  #c5c8c6
+URxvt.foreground:   #ffeefc
+URxvt.background:   #141021
+URxvt.cursorColor:  #c16772
 
 ! black
-URxvt.color0:       #282a2e
-URxvt.color8:       #373b41
+URxvt.color0:       #4f4858
+URxvt.color8:       #545d67
 
 ! red
-URxvt.color1:       #a54242
-URxvt.color9:       #cc6666
+URxvt.color1:       #c05c47
+URxvt.color9:       #c16772
 
 ! green
-URxvt.color2:       #8c9440
-URxvt.color10:      #b5bd68
+URxvt.color2:       #428e8e
+URxvt.color10:      #afda6e
 
 ! yellow
-URxvt.color3:       #de935f
-URxvt.color11:      #f0c674
+URxvt.color3:       #e4b226
+URxvt.color11:      #ebcf1a
 
 ! blue
-URxvt.color4:       #5f819d
-URxvt.color12:      #81a2be
+URxvt.color4:       #4457a3
+URxvt.color12:      #4880a5
 
 ! magenta
-URxvt.color5:       #85678f
-URxvt.color13:      #b294bb
+URxvt.color5:       #903a62
+URxvt.color13:      #9568a1
 
 ! cyan
-URxvt.color6:       #5e8d87
-URxvt.color14:      #8abeb7
+URxvt.color6:       #7aa1dc
+URxvt.color14:      #abbcda
 
 ! white
-URxvt.color7:       #707880
-URxvt.color15:      #c5c8c6
+URxvt.color7:       #c4b7c5
+URxvt.color15:      #ffeefc
+
+! colored man pages?
+URxvt.colorIT:      #87af5f
+URxvt.colorBD:      #d7d7d7
+URxvt.colorUL:      #87afd7
 
 URxvt.perl-ext-common: default,matcher,tabbedex
 URxvt.url-launcher: /usr/bin/xdg-open
