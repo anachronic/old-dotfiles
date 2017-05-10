@@ -66,3 +66,6 @@ alias anakena="ssh nsalas@anakena.dcc.uchile.cl"
 
 # Emacs aliases
 alias em="emacsclient -t -a vim"
+
+# Reload X
+alias xrl="xrdb ~/.Xresources"
