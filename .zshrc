@@ -42,7 +42,7 @@ plugins=(git archlinux pip git-extras web-search virtualenvwrapper django)
 
 # User configuration
 
-export PATH=/home/nsalas/.gem/ruby/2.3.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/nsalas/.gem/ruby/2.2.0/bin:/home/nsalas/.local/bin:$PATH
+export PATH=$(ruby -e 'print Gem.user_dir')/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/nsalas/.local/bin:$PATH
 export GTAGSCONF=~/.globalrc
 export GTAGSLABEL=ctags
 
@@ -51,8 +51,6 @@ source $ZSH/oh-my-zsh.sh
 DEFAULT_USER=nsalas
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
-
-unset SSH_ASKPASS
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
