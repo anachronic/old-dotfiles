@@ -10,9 +10,6 @@ localrepository = Gmail-local
 # Identifier for the remote repository; i.e. the actual IMAP, usually non-local.
 remoterepository = Gmail-remote
 # Status cache. Default is plain, which eventually becomes huge and slow.
-# presynchook = /home/nsalas/.local/bin/maildir-notmuch-sync pre /home/nsalas/Mail
-# postsynchook = /home/nsalas/.local/bin/maildir-notmuch-sync post /home/nsalas/Mail
-postsynchook = /home/nsalas/.local/bin/mu-reindex-safe
 autorefresh = 0.5
 quick = 10
 
@@ -21,7 +18,6 @@ quick = 10
 type = Maildir
 # Where should the mail be placed?
 localfolders = ~/Mail
-nametrans = lambda folder: re.sub('^inbox$', 'INBOX', folder)
 
 [Repository Gmail-remote]
 # Remote repos can be IMAP or Gmail, the latter being a preconfigured IMAP.
@@ -29,7 +25,6 @@ type = Gmail
 remoteusereval = get_username("Gmail-remote")
 remotepasseval = get_password("Gmail-remote")
 realdelete = no
-nametrans = lambda folder: re.sub('^INBOX$', 'inbox', folder)
 
 folderfilter = lambda foldername: foldername not in ['[Gmail]/Spam', '[Gmail]/All Mail', '[Gmail]/Starred', '[Gmail]/Important']
 
