@@ -43,7 +43,7 @@ URxvt.colorIT:      #87af5f
 URxvt.colorBD:      #d7d7d7
 URxvt.colorUL:      #87afd7
 
-URxvt.perl-ext-common: default,matcher,tabbedex
+URxvt.perl-ext-common: default,matcher,tabbedex,resize-font
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 
@@ -59,6 +59,11 @@ URxvt.tabbed.bell-fg:     244
 URxvt.tabbed.bell-bg:     17
 URxvt.tabbed.title-fg:    28
 URxvt.tabbed.title-bg:    16
+
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 
 xterm*faceName: DejaVu Sans Mono for Powerline:size=12:antialias=true
 
