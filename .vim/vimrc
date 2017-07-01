@@ -9,7 +9,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'easymotion/vim-easymotion'
-Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 
 let g:airline_powerline_fonts = 1
@@ -23,6 +23,9 @@ filetype plugin indent on
 set laststatus=2
 let mapleader=","
 
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " EasyMotion
 let g:EasyMotion_smartcase = 1
